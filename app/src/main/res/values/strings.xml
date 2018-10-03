@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">StarWarCasting</string>
+    <string name="str_no_internet">Please connect to internet.</string>
+    <string name="str_retry">Retry</string>
+    <string name="str_loading">Loading</string>
+
+    <!--  Cast List -->
+    <string name="str_titleCastListing">Character List</string>
+
+    <!-- Cast Details -->
+    <string name="str_titleCastDetails">Character Details</string>
+    <string name="str_name_colon">Name : </string>
+    <string name="str_height_colon">Height : </string>
+    <string name="str_mass_colon">Mass : </string>
+    <string name="str_createdDate_colon">Created Date : </string>
+    <string name="str_unit_meter">Meters</string>
+    <string name="str_unit_kg">Kg</string>
+
+</resources>

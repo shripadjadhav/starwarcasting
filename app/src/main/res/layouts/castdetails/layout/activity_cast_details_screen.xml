@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp"
+    tools:context=".castdetails.CastDetailsScreen">
+
+    <TextView
+        android:id="@+id/tv_castDetails_name"
+        style="@style/textViewDetails"
+        android:text="@string/str_name_colon" />
+
+    <TextView
+        android:id="@+id/tv_castDetails_height"
+        style="@style/textViewDetails"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_height_colon" />
+
+    <TextView
+        android:id="@+id/tv_castDetails_mass"
+        style="@style/textViewDetails"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_mass_colon" />
+
+    <TextView
+        android:id="@+id/tv_castDetails_createdDate"
+        style="@style/textViewDetails"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_createdDate_colon" />
+
+</LinearLayout>
