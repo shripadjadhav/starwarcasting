@@ -5,12 +5,10 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.starwarcasting.AdapterCastListing;
 import com.starwarcasting.R;
 import com.starwarcasting.base.BaseActivity;
 import com.starwarcasting.castdetails.CastDetailsScreen;
-import com.starwarcasting.constant.ParamConstant;
 import com.starwarcasting.model.DataStarWarCast;
 import com.starwarcasting.util.NetworkUtils;
 import com.starwarcasting.util.UiUtils;
@@ -21,9 +19,13 @@ import static com.starwarcasting.constant.ParamConstant.DATA_STAR_WAR_CAST;
 
 public class CastListingScreen extends BaseActivity implements ViewCastListing, AdapterCastListing.Callback {
 
-    // UI variable
+    /**
+     * This is used to show list of
+     */
     private RecyclerView         rvList;
-    // Presenter
+    /**
+     * Presenter for Listing functionality
+     */
     private PresenterCastListing presenter;
 
     @Override
@@ -32,6 +34,9 @@ public class CastListingScreen extends BaseActivity implements ViewCastListing, 
         setContentView(R.layout.activity_cast_listing_screen);
     }
 
+    /**
+     * This is used to call API to get list of star war characters
+     */
     private void loadDataFromApi() {
         if (NetworkUtils.isConnected(CastListingScreen.this)) {
             showProgress();

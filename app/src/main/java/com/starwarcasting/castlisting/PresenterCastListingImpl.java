@@ -9,15 +9,29 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * This is implementation class of Presenter for Cast listing screen
+ */
 @SuppressWarnings("NullableProblems")
 public class PresenterCastListingImpl extends BasePresenter implements PresenterCastListing {
 
+    /**
+     * This is View object to interact with Listing Screen UI component
+     */
     private ViewCastListing viewCastListing;
 
+    /**
+     * Constructor
+     *
+     * @param viewCastListing Listing screen View reference
+     */
     public PresenterCastListingImpl(ViewCastListing viewCastListing) {
         this.viewCastListing = viewCastListing;
     }
 
+    /**
+     * This is used to get list of all Characters in Star War
+     */
     @Override
     public void getCastListingData() {
         ApiInterface apiClient = ApiClient.getClient().create(ApiInterface.class);

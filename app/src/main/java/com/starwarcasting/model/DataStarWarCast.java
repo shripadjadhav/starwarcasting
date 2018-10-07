@@ -5,17 +5,34 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * This is entity class to store details of Star War cast
+ *
+ * @author Shripadj
+ */
 public class DataStarWarCast implements Parcelable {
 
+    /**
+     * This is used to store Name
+     */
     @SerializedName("name")
     public String name;
 
+    /**
+     * This is used to store Height
+     */
     @SerializedName("height")
     public String height;
 
+    /**
+     * This is used to store Weight
+     */
     @SerializedName("mass")
     public String mass;
 
+    /**
+     * This is used to store character created date
+     */
     @SerializedName("created")
     public String created;
 
