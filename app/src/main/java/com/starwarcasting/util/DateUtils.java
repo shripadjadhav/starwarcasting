@@ -17,7 +17,7 @@ public class DateUtils {
      * This is constant variable to store date format
      * e.g 07 Oct, 2018 13:30
      */
-    public static final String DF_DD_MM_YYYY_HH_MM = "dd MMM, yyyy HH:mm";
+    public static final String DF_DD_MMM_YYYY_HH_MM = "dd MMM, yyyy HH:mm";
 
     /**
      * This is constant variable to store date format

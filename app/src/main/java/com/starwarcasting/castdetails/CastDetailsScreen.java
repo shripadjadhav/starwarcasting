@@ -11,7 +11,7 @@ import com.starwarcasting.util.DateUtils;
 import com.starwarcasting.util.UiUtils;
 
 import static com.starwarcasting.constant.ParamConstant.DATA_STAR_WAR_CAST;
-import static com.starwarcasting.util.DateUtils.DF_DD_MM_YYYY_HH_MM;
+import static com.starwarcasting.util.DateUtils.DF_DD_MMM_YYYY_HH_MM;
 import static com.starwarcasting.util.DateUtils.DF_YYYY_MM_DD_T_HH_MM_SS_SSS;
 
 /**
@@ -93,7 +93,7 @@ public class CastDetailsScreen extends BaseActivity {
         // format date
         String formattedDate =
                 new DateUtils().getFormattedDate(paramStartWarCast.created,
-                        DF_YYYY_MM_DD_T_HH_MM_SS_SSS, DF_DD_MM_YYYY_HH_MM);
+                        DF_YYYY_MM_DD_T_HH_MM_SS_SSS, DF_DD_MMM_YYYY_HH_MM);
         String strDateValue = STR_CREATED_DATE + " " + formattedDate;
 
         int colorId = ContextCompat.getColor(CastDetailsScreen.this, R.color.colorTextLabel);
